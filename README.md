@@ -26,12 +26,12 @@ The deliverable for this lab will be a PDF document answering the questions indi
         4. Press Back and navigate to Netmask, where we will set the same subnet mask as in the previous step.
         5. Press Back and when asked, restart the device.
     3. Finally, we must check network visibility. To do this, from our computers we will ping the IP address we just assigned to the phone, which should respond, as well as to the other computers on the network.
-3. **Configure the SIP Account** **on the phone.** To do this, we will access the phone’s web configuration panel by entering the IP address we assigned in the previous step from a browser. The credentials are admin/admin.
+3. **Configure the SIP Account on the phone.** To do this, we will access the phone’s web configuration panel by entering the IP address we assigned in the previous step from a browser. The credentials are admin/admin.
     1. From there, we will go to Accounts > Account 1 > General settings. There, ensure that “Account Active” is set to “Yes” and enter an “Account Name,” for example, “gs.” All other fields should be blank. Click “Save and apply.”
     2. Now go to “SIP settings” > “Basic settings.” Select “No” for “SIP Registration” and ensure that the SIP protocol uses port `5060` and UDP.
     3. Take a look at the other options offered by the phone, but do not change anything.
 4. **Configure the Virtual SIP Client.** To do this, on each of the computers:
-    1. Download the appropriate version of linphone for our system.
+    1. Download the appropriate version of (linphone)[https://www.linphone.org] for our system.
     2. Once installed, open the program and select to create a SIP account with the default parameters. Once created, click the gear at the bottom left and click “Preferences.”
     3. In the “Network” section, make the following adjustments:
         1. Disable the IPv6 option.
