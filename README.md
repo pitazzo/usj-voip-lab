@@ -1,12 +1,14 @@
-### Intro
+## 👩🏻‍💻 VoIP Lab
+
+### 🧐 Intro
 
 The objective of this lab is to make VoIP calls on a local network. The call will occur between a physical VoIP phone and a virtual SIP client running on a laptop. We will analyze the traces of these calls with Wireshark to see the details of the SIP and RTP protocols.
 
-### Deliverable
+### 📦 Delivery
 
 The deliverable for this lab will be a PDF document answering the questions indicated at the end of this document. Only one document per group should be submitted through the designated PDU submission. It is recommended to answer in class, as the questions are brief, simple, and directly related to what happens on the local network.
 
-### Steps to Follow
+### 🗺️ Steps to Follow
 
 1. **Physical Connection.** Connect the VoIP phone and the computers where the SIP client will run using the switch. This will require connecting the elements with Ethernet cables, as well as powering the switch and the phone. Phones are connected using the “LAN” port.
 2. **Local Network Configuration.** Both the phone and the computers will be part of a simple local area network. Since there is no router, DHCP service, DNS, or any of the services usually available on a conventional network, we will have to configure some fields manually.
@@ -47,7 +49,7 @@ The deliverable for this lab will be a PDF document answering the questions indi
 6. **Trace Analysis.** To analyze the traces during the calls, open Wireshark on a computer and capture the traffic on the Ethernet network interface. Try filtering by `sip`, `rtp`, or the IP addresses of the other computers and/or phone with `ip.src=...`.
 7. When finished, reset the phone to factory settings. To do this, go to “System” > “Factory reset.”
 
-### Questions to Answer
+### ❓Questions to Answer
 
 - Which are the protocols in use? What are they used for?
 - What command is sent to establish a conversation?
