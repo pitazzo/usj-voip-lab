@@ -16,22 +16,22 @@ The deliverable for this lab will be a PDF document answering the questions indi
 2. **Local Network Configuration.** Both the phone and the computers will be part of a simple local area network. Since there is no router, DHCP service, DNS, or any of the services usually available on a conventional network, we will have to configure some fields manually.
     1. On the computers we will:
         1. Temporarily disable the firewall (remember to enable it again afterward).
-        2. Set a private IP address for our computer on the network we are configuring, of the type 192.168.X.Y. The address is arbitrary but must be used consistently.
-        3. Set the subnet mask on the network we are configuring, in the format 255.255.W.Z. Again, it is arbitrary but must be configured consistently.
+        2. Set a private IP address for our computer on the network we are configuring, of the type `192.168.X.Y`. The address is arbitrary but must be used consistently.
+        3. Set the subnet mask on the network we are configuring, in the format `255.255.W.Z` (/16). Again, it is arbitrary but must be configured consistently.
         4. If you have problems, try disabling other networks, such as WiFi.
     2. On the VoIP phone we will:
-        1. From the menu (circular button), go to System > Network > Internet protocols and select IPv4 only.
-        2. Press Back and navigate to IPv4 Settings and select Static IP.
-        3. Press Back and navigate to Static IP Settings > Static IP. There we will set an IP address in the same range as the previous step, but of course different.
+        1. From the menu (circular button), go to "System" > "Network2 > "Internet protocols" and select "IPv4 only".
+        2. Press Back and navigate to IPv4 Settings and select "Static IP".
+        3. Press Back and navigate to "Static IP Settings" > "Static IP". There we will set an IP address in the same range as the previous step, but of course different.
         4. Press Back and navigate to Netmask, where we will set the same subnet mask as in the previous step.
         5. Press Back and when asked, restart the device.
     3. Finally, we must check network visibility. To do this, from our computers we will ping the IP address we just assigned to the phone, which should respond, as well as to the other computers on the network.
 3. **Configure the SIP Account on the phone.** To do this, we will access the phone’s web configuration panel by entering the IP address we assigned in the previous step from a browser. The credentials are admin/admin.
-    1. From there, we will go to Accounts > Account 1 > General settings. There, ensure that “Account Active” is set to “Yes” and enter an “Account Name,” for example, “gs.” All other fields should be blank. Click “Save and apply.”
+    1. From there, we will go to "Accounts" > "Account 1" > "General settings". There, ensure that “Account Active” is set to “Yes” and enter an “Account Name,” for example, “gs.” All other fields should be blank. Click “Save and apply.”
     2. Now go to “SIP settings” > “Basic settings.” Select “No” for “SIP Registration” and ensure that the SIP protocol uses port `5060` and UDP.
     3. Take a look at the other options offered by the phone, but do not change anything.
 4. **Configure the Virtual SIP Client.** To do this, on each of the computers:
-    1. Download the appropriate version of (linphone)[https://www.linphone.org] for our system.
+    1. Download the appropriate version of [linphone](https://www.linphone.org) for our system.
     2. Once installed, open the program and select to create a SIP account with the default parameters. Once created, click the gear at the bottom left and click “Preferences.”
     3. In the “Network” section, make the following adjustments:
         1. Disable the IPv6 option.
